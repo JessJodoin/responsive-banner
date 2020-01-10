@@ -2,18 +2,63 @@ html {
   font-family: Georgia, serif;
 }
 
-.content {
+.bg {
   background-color: #495562;
+}
+
+.img {
+  max-height: 500px;
+}
+
+.content {
   color: #fff;
 }
 
 .book-btn {
   color: #fff;
-  border: 2px solid #97a49b;
+  border: 3px solid #97a49b;
 }
 
 .book-btn:hover {
   color: #495562;
   background-color: #fff;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .book-btn {
+    float: right;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .bg {
+    position: relative;
+  }
+
+  .content {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to top, rgba(73, 85, 98, .9), transparent);
+  }
+
+  .prgrh {
+    padding-bottom: 0;
+  }
+
+  .book-btn {
+    color: #fff;
+    border: 3px solid #fff;
+  }
+
+  .book-btn:hover {
+    color: #495562;
+    background-color: #efefef;
+    border: 3px solid #efefef;
+  }
+
 }
